@@ -1,5 +1,5 @@
 import express from "express";
-import { followUser, unfollowUser, getFollowers, getFollowing } from "../controllers/connection.Controller.js";
+import { followUser, unfollowUser, getFollowers, getFollowing } from "../controllers/connection.controller.js";
 import authMiddleware from "../middlewares/auth.middleware.js"; // ✅ your JWT middleware
 
 const connectionRouter = express.Router();
