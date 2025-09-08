@@ -1,0 +1,170 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  background: white;
+  border-bottom: 0.5px solid #ddd;
+  display: flex;
+  flex-direction: column; /* 2 rows: logo + nav */
+  z-index: 1000;
+}
+
+/* Row 1: logo */
+.header-top {
+  text-align: center;
+  margin-bottom: 8px !important; /* space between logo & nav */
+}
+
+.logo {
+  font-size: 15px;
+  font-weight: bold;
+  color: #0077b5;
+  text-decoration: none;
+}
+
+/* Row 2: nav */
+.header-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* links */
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #0077b5;
+}
+
+/* Notifications */
+.notif-wrapper {
+  position: relative;
+}
+
+.notif-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.notif-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+/* Dropdown */
+.notif-dropdown {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 320px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .1);
+  z-index: 100;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.notif-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.notif-markall {
+  font-size: 12px;
+  background: #000;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.notif-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.notif-item.unread {
+  background: #f9fbff;
+  font-weight: bold;
+}
+
+.notif-msg {
+  font-size: 14px;
+}
+
+.notif-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+.notif-mark {
+  font-size: 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+/* Logout */
+.logout-btn {
+  padding: 6px 12px;
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.logout-btn:hover {
+  background: #c82333;
+}
+
+/* User link inside notification */
+.notif-user {
+  font-weight: bold;
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.notif-user:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 10px;
+    font-size: 12px;
+  }
+  .logout-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}

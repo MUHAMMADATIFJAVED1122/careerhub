@@ -1,0 +1,105 @@
+.profile-info-container {
+  margin-top: 20px;
+}
+
+.profile-info-main {
+  display: flex;
+  flex-direction: column; /* stack info and buttons vertically */
+  align-items: flex-start;
+}
+
+.profile-info-left {
+  max-width: 600px;
+}
+
+.profile-info-left h2 {
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+  color: #111827;
+}
+
+.profile-info-left p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.profile-info-left b {
+  color: #1f2937;
+}
+
+.profile-info-buttons {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+}
+
+.profile-info-buttons .follow-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.profile-info-buttons .follow-btn:hover {
+  background: #1d4ed8;
+}
+
+.profile-info-buttons .chat-btn {
+  background: #f3f4f6;
+  color: #111827;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.profile-info-buttons .chat-btn:hover {
+  background: #e5e7eb;
+}
+
+.profile-info-follow {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.profile-info-follow div {
+  background: #f3f4f6;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.profile-info-follow a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.profile-info-follow a:hover {
+  text-decoration: underline;
+}
+
+.edit-profile-btn {
+  margin-top: 12px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.edit-profile-btn:hover {
+  background: #1d4ed8;
+}

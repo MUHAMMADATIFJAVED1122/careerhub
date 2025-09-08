@@ -1,0 +1,76 @@
+/* src/components/posts/CreatePost.css */
+
+.create-post-card {
+  padding: 16px;              /* p-2 */
+  margin-bottom: 24px;        /* mb-3 */
+  border-radius: 24px;        /* rounded-xl/2xl look */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* soft shadow */
+}
+
+.create-post-cardContent {
+  padding: 0; /* Card already has outer padding */
+}
+
+.create-post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.create-post-title {
+  font-weight: 700;
+}
+
+.create-post-form {
+  width: 100%;
+}
+
+.create-post-textfield {
+  margin-bottom: 16px;
+}
+
+.create-post-previewWrapper {
+  margin-bottom: 16px;
+}
+
+.create-post-previewImage {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: auto;
+}
+
+.create-post-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hidden file input, accessible via label */
+.visually-hidden-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap; /* added to avoid the input expanding */
+  border: 0;
+}
+
+/* Optional text next to the image icon */
+.create-post-imageLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.create-post-imageText {
+  font-size: 0.9rem;
+  color: #1976d2; /* MUI primary default */
+}

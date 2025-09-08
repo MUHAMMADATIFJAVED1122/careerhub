@@ -1,0 +1,22 @@
+.profile-header-container {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.profile-header-cover {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.profile-header-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  position: absolute;
+  bottom: -60px;
+  left: 20px;
+  background: #fff;
+}

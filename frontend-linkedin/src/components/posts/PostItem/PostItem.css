@@ -1,0 +1,120 @@
+/* Container */
+.post-item {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Post Header */
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.post-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Content */
+.post-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Actions */
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.post-actions button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.post-like {
+  background: #f8f9fa;
+  color: #e63946;
+}
+
+.post-like:hover {
+  background: #ffe5e5;
+}
+
+/* Comments */
+.post-comments {
+  margin-top: 12px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.post-comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.post-comment img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+  object-fit: cover;
+}
+
+.post-comment b {
+  margin-right: 6px;
+}
+
+.comment-delete {
+  margin-left: auto;
+  background: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+}
+
+/* Comment Form */
+.post-comment-form {
+  display: flex;
+  margin-top: 8px;
+}
+
+.post-comment-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.post-comment-form button {
+  margin-left: 6px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: #fff;
+}
+
+.post-comment-form button:hover {
+  background: #0056b3;
+}

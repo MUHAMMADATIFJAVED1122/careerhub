@@ -1,0 +1,128 @@
+/* Container for FollowersPage */
+.followers-page {
+  max-width: 600px;
+  margin: 40px 0 40px 20px; /* aligned to left with some margin */
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.followers-page h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.followers-list {
+  list-style: none;
+  padding: 0;
+}
+
+.followers-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f9fafb;
+  transition: background 0.2s ease;
+}
+
+.followers-list li:hover {
+  background: #f1f5f9;
+}
+
+.followers-list li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #007bff;
+}
+
+.followers-list li a:hover {
+  text-decoration: underline;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Modal overlay for FollowersList (left aligned modal) */
+.followers-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 20px; /* aligned slightly to left */
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: flex-start; /* align top */
+  justify-content: flex-start; /* left aligned */
+  padding: 40px 0 0 20px;
+  z-index: 1050;
+}
+
+/* Modal content */
+.followers-modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.followers-modal h3 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.followers-modal ul {
+  padding: 0;
+  list-style: none;
+}
+
+.followers-modal ul li {
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #f9fafb;
+  transition: background 0.2s;
+}
+
+.followers-modal ul li:hover {
+  background: #f1f5f9;
+}
+
+.followers-modal ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.followers-modal ul li a:hover {
+  text-decoration: underline;
+}
+
+.followers-modal button {
+  margin-top: 15px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.followers-modal button:hover {
+  background: #1d4ed8;
+}
