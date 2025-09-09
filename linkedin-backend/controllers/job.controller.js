@@ -42,7 +42,7 @@
 //     res.status(500).json({ error: "❌ Failed to update job" });
 //   }
 // };
-import Job from "../models/job.model.js";
+import Job from "../models/Job.model.js";
 
 // Create job
 // export const createJob = async (req, res) => {

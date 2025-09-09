@@ -1,5 +1,5 @@
 import Message from "../models/chat.model.js";
-import User from "../models/user.model.js";
+import User from "../models/User.model.js";
 
 // Get all users that current user has chatted with
 export const getChatUsers = async (req, res) => {

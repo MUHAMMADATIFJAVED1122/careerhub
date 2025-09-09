@@ -1,4 +1,4 @@
-import User from "../models/user.model.js";
+import User from "../models/User.model.js";
 import Notification from "../models/Notification.model.js";
 // controllers/connection.controller.js
 //import Notification from "../models/Notification.model.js";
