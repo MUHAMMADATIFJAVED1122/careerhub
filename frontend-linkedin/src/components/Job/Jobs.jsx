@@ -45,7 +45,7 @@ const Jobs = () => {
                 {/* Apply Button */}
                 <Link
                   to={`/jobs/${job._id}`}
-                  className="btn btn-outline-primary btn-sm mt-2"
+                  className="btn btn-primary btn-sm mt-2"
                 >
                   View Details
                 </Link>
