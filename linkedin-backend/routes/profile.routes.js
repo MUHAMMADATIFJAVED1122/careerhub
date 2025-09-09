@@ -1,7 +1,7 @@
 import express from "express";
 import { getProfile, updateProfile, getProfileById } from "../controllers/profile.controller.js";
 import authMiddleware from "../middlewares/auth.middleware.js";
-import upload from "../middlewares/profileUpload.middleware.js";
+import upload from "../middlewares/profileupload.middleware.js";
 
 const profileRouter = express.Router();
 
