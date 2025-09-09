@@ -5,7 +5,7 @@ const ProfileHeader = ({ profile }) => {
   const getImageUrl = (path, fallback) => {
     if (!path) return fallback;
     if (path.startsWith("http")) return path;
-    return `http://localhost:5000${path}`;
+    return `https://careerhubbackend-qnhl.onrender.com${path}`;
   };
 
   return (

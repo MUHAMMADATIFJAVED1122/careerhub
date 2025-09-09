@@ -1,7 +1,7 @@
 // src/services/chatService.js
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/chat";
+const API_URL = "https://careerhubbackend-qnhl.onrender.com/api/chat";
 
 // Delete a message
 export const deleteMessage = async (token, messageId) => {

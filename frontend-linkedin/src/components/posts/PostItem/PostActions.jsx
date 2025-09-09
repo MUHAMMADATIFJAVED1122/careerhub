@@ -56,12 +56,13 @@ const PostActions = ({
       {/* 3-dot menu for owner */}
       {isOwner && (
         <div className="position-relative">
-          <button
-            className="btn btn-sm btn-light"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            ⋮
-          </button>
+        <button
+  className="btn btn-sm btn-dark"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  ⋮
+</button>
+
 
           {menuOpen && (
             <div

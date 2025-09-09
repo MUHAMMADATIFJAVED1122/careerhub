@@ -25,7 +25,7 @@ const CreatePost = ({ onPostCreated }) => {
       formData.append("content", content);
       if (image) formData.append("image", image);
 
-      const res = await axios.post("http://localhost:5000/api/posts", formData, {
+      const res = await axios.post("https://careerhubbackend-qnhl.onrender.com/api/posts", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",

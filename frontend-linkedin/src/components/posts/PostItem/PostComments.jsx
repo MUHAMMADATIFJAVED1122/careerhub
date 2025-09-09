@@ -10,7 +10,7 @@ const PostComments = ({ comments, setComments, postId, safeUserId, token }) => {
     if (!token) return alert("Login to delete comment");
     try {
       await axios.delete(
-        `http://localhost:5000/api/posts/comment/${postId}/${commentId}`,
+        `https://careerhubbackend-qnhl.onrender.com/api/posts/comment/${postId}/${commentId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -39,7 +39,7 @@ const PostComments = ({ comments, setComments, postId, safeUserId, token }) => {
                   c.user?.profilePicture
                     ? c.user.profilePicture.startsWith("http")
                       ? c.user.profilePicture
-                      : `http://localhost:5000${c.user.profilePicture}`
+                      : `https://careerhubbackend-qnhl.onrender.com${c.user.profilePicture}`
                     : "/default-avatar.png"
                 }
                 alt={c.user?.username}
@@ -77,12 +77,13 @@ const PostComments = ({ comments, setComments, postId, safeUserId, token }) => {
       {/* See more button */}
       {visibleCount < comments.length && (
         <div className="text-center mt-2">
-          <button
-            className="btn btn-sm btn-outline-primary"
-            onClick={() => setVisibleCount(visibleCount + 2)}
-          >
-            See more comments
-          </button>
+       <button
+  className="btn btn-sm btn-primary"
+  onClick={() => setVisibleCount(visibleCount + 2)}
+>
+  See more comments
+</button>
+
         </div>
       )}
     </div>

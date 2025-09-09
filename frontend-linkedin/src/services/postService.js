@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/posts";
+const API_URL = "https://careerhubbackend-qnhl.onrender.com/api/posts";
 
 // ✅ Create Post with image
 export const createPost = async (token, postData) => {

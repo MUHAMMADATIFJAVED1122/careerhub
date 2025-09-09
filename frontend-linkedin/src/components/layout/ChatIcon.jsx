@@ -15,7 +15,7 @@ const ChatIcon = () => {
     if (!token) return;
     const fetchChatUsers = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/chat/users", {
+        const res = await axios.get("https://careerhubbackend-qnhl.onrender.com/api/chat/users", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setChatUsers(res.data || []);

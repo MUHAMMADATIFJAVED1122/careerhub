@@ -28,7 +28,7 @@ const ProfileEditForm = ({ form, setForm, token, setProfile, setEditing }) => {
       if (coverFile) formData.append("coverPhoto", coverFile);
       else if (form.coverPhoto) formData.append("coverPhoto", form.coverPhoto);
 
-      const res = await axios.put("http://localhost:5000/api/profile", formData, {
+      const res = await axios.put("https://careerhubbackend-qnhl.onrender.com/api/profile", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",

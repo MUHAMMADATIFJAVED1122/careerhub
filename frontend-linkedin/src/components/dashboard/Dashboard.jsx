@@ -12,7 +12,7 @@ const Dashboard = () => {
 
   const fetchPosts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/posts");
+      const res = await axios.get("https://careerhubbackend-qnhl.onrender.com/api/posts");
       setPosts(Array.isArray(res.data) ? res.data : []);
     } catch (err) {
       console.error("Error fetching posts:", err?.response?.data || err.message);

@@ -16,7 +16,7 @@ const Header = () => {
     if (!token) return;
     const fetchNotifications = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/notifications", {
+        const res = await axios.get("https://careerhubbackend-qnhl.onrender.com/api/notifications", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setNotifications(res.data || []);
@@ -33,7 +33,7 @@ const Header = () => {
   const markAsRead = async (id) => {
     try {
       await axios.put(
-        `http://localhost:5000/api/notifications/${id}/read`,
+        `https://careerhubbackend-qnhl.onrender.com/api/notifications/${id}/read`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -49,7 +49,7 @@ const Header = () => {
   const markAllAsRead = async () => {
     try {
       await axios.put(
-        "http://localhost:5000/api/notifications/read/all",
+        "https://careerhubbackend-qnhl.onrender.com/api/notifications/read/all",
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );

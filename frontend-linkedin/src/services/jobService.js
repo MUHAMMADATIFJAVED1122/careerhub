@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/jobs";
+const API_URL = "https://careerhubbackend-qnhl.onrender.com/api/jobs";
 
 // Fetch all jobs
 export const fetchJobs = async () => {

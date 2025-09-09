@@ -21,7 +21,7 @@ const Signup = () => {
 
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:5000/api/users/signup", {
+      const res = await axios.post("https://careerhubbackend-qnhl.onrender.com/api/users/signup", {
         email,
         password,
         username,

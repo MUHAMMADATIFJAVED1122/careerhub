@@ -106,7 +106,7 @@ const Posts = () => {
         return;
       }
 
-      await axios.delete(`http://localhost:5000/api/posts/${postId}`, {
+      await axios.delete(`https://careerhubbackend-qnhl.onrender.com/api/posts/${postId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 

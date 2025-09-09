@@ -15,7 +15,7 @@ const PostContent = ({ post, editing, setEditing, onUpdate, token }) => {
       if (editData.image) formData.append("image", editData.image);
 
       const res = await axios.put(
-        `http://localhost:5000/api/posts/${post._id}`,
+        `https://careerhubbackend-qnhl.onrender.com/api/posts/${post._id}`,
         formData,
         {
           headers: {

@@ -1,6 +1,6 @@
 // src/services/notificationService.js
 import axios from "axios";
-const BASE = "http://localhost:5000/api/notifications";
+const BASE = "https://careerhubbackend-qnhl.onrender.com/api/notifications";
 
 export const getNotifications = async (token) => {
   const { data } = await axios.get(BASE, {

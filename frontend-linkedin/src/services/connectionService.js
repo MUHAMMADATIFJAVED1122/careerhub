@@ -1,6 +1,6 @@
 // src/services/connectionService.js
 import axios from "axios";
-const BASE = "http://localhost:5000/api/connections";
+const BASE = "https://careerhubbackend-qnhl.onrender.com/api/connections";
 
 export const followUser = async (token, targetId) => {
   const { data } = await axios.post(`${BASE}/${targetId}/follow`, {}, {

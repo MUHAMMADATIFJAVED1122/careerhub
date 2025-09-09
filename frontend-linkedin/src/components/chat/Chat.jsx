@@ -34,7 +34,7 @@ const Chat = () => {
     const fetchUser = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/chat/user/${userId}`,
+          `https://careerhubbackend-qnhl.onrender.com/api/chat/user/${userId}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
         setReceiverInfo(res.data);
@@ -46,7 +46,7 @@ const Chat = () => {
     const fetchMessages = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/chat/${userId}`,
+          `https://careerhubbackend-qnhl.onrender.com/api/chat/${userId}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
         setChat(res.data || []);
@@ -112,7 +112,7 @@ const Chat = () => {
     if (!message.trim()) return;
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/chat",
+        "https://careerhubbackend-qnhl.onrender.com/api/chat",
         { receiverId: userId, message },
         { headers: { Authorization: `Bearer ${token}` } }
       );

@@ -53,8 +53,8 @@ const Profile = () => {
       try {
         const res = await axios.get(
           isOwnProfile
-            ? "http://localhost:5000/api/profile"
-            : `http://localhost:5000/api/profile/${viewedUserId}`,
+            ? "https://careerhubbackend-qnhl.onrender.com/api/profile"
+            : `https://careerhubbackend-qnhl.onrender.com/api/profile/${viewedUserId}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
         const data = isOwnProfile ? res.data.user : res.data;
@@ -109,8 +109,8 @@ const Profile = () => {
       try {
         const res = await axios.get(
           isOwnProfile
-            ? "http://localhost:5000/api/posts/my-posts"
-            : `http://localhost:5000/api/posts/user/${viewedUserId}`,
+            ? "https://careerhubbackend-qnhl.onrender.com/api/posts/my-posts"
+            : `https://careerhubbackend-qnhl.onrender.com/api/posts/user/${viewedUserId}`,
           { headers: { Authorization: `Bearer ${token}` } }
         );
         setPosts(res.data);
